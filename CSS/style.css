@@ -8,15 +8,18 @@
 
 body {
     background-color: #060E13;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.background-home{
+.background-home {
     background-image: url(../IMG/bg-img.png);
     background-size: cover;
     background-position: center;
     height: 100vh;
     width: 100%;
-    
+
 }
 
 .navbar {
@@ -32,6 +35,7 @@ body {
 .navbar h3 {
     padding: 0.2rem;
     margin: 0.5px;
+    margin-left: 2rem;
     cursor: pointer;
     letter-spacing: 3px;
     font-size: 1.3rem;
@@ -39,7 +43,7 @@ body {
     font-weight: lighter;
 }
 
-span{
+span {
     color: #D35400;
     font-family: 'Pacifico', 'cursiva';
 }
@@ -51,7 +55,7 @@ span{
     cursor: pointer;
 }
 
-.navbar i:hover{
+.navbar i:hover {
     color: #D35400;
     transition: 1s;
 }
@@ -71,7 +75,7 @@ span{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-left: 1px solid #D35400 ;
+    border-left: 1px solid #D35400;
 }
 
 .section-aboutme-home h3 {
@@ -79,27 +83,27 @@ span{
     font-size: 35px;
     margin: 0.5rem;
     padding: 0.5rem;
-    font-family:'Epilogue', sans-serif ;
+    font-family: 'Epilogue', sans-serif;
 }
 
 
 .section-aboutme-home h1 {
     font-weight: bold;
     color: #D35400;
-    font-size:70px;
+    font-size: 70px;
     margin: 0 0.5rem 0 0.5rem;
     padding: 0.5rem;
     font-family: 'Pacifico', 'cursiva';
 }
 
 
-.about-me-descrition{
+.about-me-descrition {
     margin: 0 0.5rem 0 0.5rem;
     padding: 0.5rem;
     font-size: large;
 }
 
-.section-aboutme-home button{
+.section-aboutme-home button {
     margin: 0.5rem;
     padding: 0.5rem;
     width: 20%;
@@ -110,18 +114,67 @@ span{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family:'Gill Sans', 'Gill Sans MT', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
     font-size: 15px;
     border-radius: 5px;
 }
 
-.section-aboutme-home button i:hover{
+.section-aboutme-home button i:hover {
     color: #060E13;
     cursor: pointer;
 }
-.section-aboutme-home button:hover{
+
+.section-aboutme-home button:hover {
     width: 30%;
     background-color: #7a3608;
+}
+
+.container-projects {
+    width: 70%;
+    height: 100vh;
+    margin: 5rem;
+    padding: 1rem;
+
+}
+
+.title-projects {
+    width: 100% auto;
+    height: 20vh;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-projects h2 {
+    font-size: 3rem;
+    border: 1px solid #D35400;
+    border-radius: 3px;
+    padding: 1rem;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+.line-title {
+    color: #D35400;
+    width: 30%;
+    height: 1px;
+    border-bottom: 2px solid #D35400;
+    margin: 2px;
+    /*animation-name: line;
+    animation-duration: 3s;*/
+}
+
+@keyframes line {
+    from {
+        width: 30%;
+    }
+
+    to {
+        width: 0%;
+    }
+
 }
 
 
@@ -146,7 +199,7 @@ span{
     cursor: pointer;
 }
 
-.icons-footer i:hover{
+.icons-footer i:hover {
     color: #D35400;
     transition: 1s;
 }
